@@ -1,9 +1,9 @@
 #!/bin/bash
 
-find ~/watch -type f -and -newer ~/log/script_10.log -exec cat {} \;
-find ~/watch -type f -and -newer ~/log/script_10.log -exec mv {} {}.back \;
+find /home/admin1/watch -type f -and -newer /home/admin1/log/script_10.log -exec cat {} \;
+find /home/admin1/watch -type f -and -newer /home/admin1/log/script_10.log -exec mv {} {}.back \;
 
-rm ~/log/script_10.log 
+rm /home/admin1/log/script_10.log 
 
 message="$(date +"%y-%m-%d %T")"
-echo $message >>~/log/script_10.log
+echo $message >>/home/admin1/log/script_10.log

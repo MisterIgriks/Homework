@@ -1,0 +1,7 @@
+[Unit]
+Description = New file in watch
+After = network.target
+[Service]
+ExecStart = ~/Homework/script_10.sh
+[Install]
+WantedBy = multi-user.target
