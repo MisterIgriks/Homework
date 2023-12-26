@@ -1,7 +1,0 @@
-[Unit]
-Description = New file in watch
-After = network.target
-[Service]
-ExecStart = /usr/sbin/script_10.sh
-[Install]
-WantedBy = multi-user.target
